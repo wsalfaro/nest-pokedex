@@ -3,13 +3,13 @@ import { Document } from "mongoose";
 
 // Representacion de lo que vamos a grabar en BD, TABLA
 @Schema()
-export class Pokemon extends Document{
+export class Pokemon extends Document {
     //id: string // mongo me lo da
     @Prop({
         unique: true,
         index: true,
     })
-    nombre: string; 
+    nombre: string;
 
     @Prop({
         unique: true,
@@ -18,4 +18,4 @@ export class Pokemon extends Document{
     no: number;
 }
 
-export const PokemonSchema = SchemaFactory.createForClass( Pokemon );
+export const PokemonSchema = SchemaFactory.createForClass(Pokemon);

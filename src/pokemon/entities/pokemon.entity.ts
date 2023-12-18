@@ -7,9 +7,9 @@ export class Pokemon extends Document {
     //id: string // mongo me lo da
     @Prop({
         unique: true,
-        index: true,
+        index: true, 
     })
-    nombre: string;
+    name: string;
 
     @Prop({
         unique: true,
